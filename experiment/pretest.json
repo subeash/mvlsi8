@@ -1,115 +1,117 @@
   {
 	  "version": 2.0,
   "questions": [
-    {
-      "question": "1. What does the term 'Gummel plot' specifically refer to in the context of BJT characterization?",
-      "answers": {
-        "a": "A plot of base-emitter voltage (V_BE) versus collector current (I_C)",
-        "b": "A plot of base current (I_B) versus base-emitter voltage (V_BE)",
-        "c": "A plot of collector current (I_C) versus base current (I_B)",
-        "d": "A plot of base-emitter voltage (V_BE) versus base current (I_B)"
-      },
-      "correctAnswer": "b",
-      "difficulty": "beginner"
+    
+  {
+    "question": "1. How does the Fermi energy level of an intrinsic semiconductor change with increasing temperature?",
+    "answers": {
+      "a": "It increases",
+      "b": "It decreases",
+      "c": "It remains constant",
+      "d": "It initially increases then decreases"
     },
-    {
-      "question": "2. In a Gummel plot, what does the slope of the base current (I_B) versus base-emitter voltage (V_BE) plot represent?",
-      "answers": {
-        "a": "Saturation current (I_S)",
-        "b": "Current gain (\u03b2)",
-        "c": "Emitter efficiency",
-        "d": "Thermal voltage (V_T)"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+    "correctAnswer": "b",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "2. What happens to the carrier concentration in an intrinsic semiconductor as the temperature rises?",
+    "answers": {
+      "a": "It decreases",
+      "b": "It remains constant",
+      "c": "It increases",
+      "d": "It first decreases, then increases"
     },
-    {
-      "question": "3. The Gummel plot is commonly used to determine which of the following parameters of a BJT?",
-      "answers": {
-        "a": "Collector-emitter voltage (V_CE)",
-        "b": "Base-emitter voltage (V_BE)",
-        "c": "Saturation current (I_S)",
-        "d": "Thermal resistance (R_th)"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+    "correctAnswer": "c",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "3. In an n-type semiconductor, what effect does increasing temperature have on the Fermi energy level?",
+    "answers": {
+      "a": "It moves closer to the conduction band",
+      "b": "It moves closer to the valence band",
+      "c": "It remains unchanged",
+      "d": "It moves away from the conduction band"
     },
-    {
-      "question": "4. What is the primary purpose of characterizing a BJT using the Gummel plot method?",
-      "answers": {
-        "a": "To analyze power dissipation",
-        "b": "To optimize frequency response",
-        "c": "To extract key parameters like current gain and saturation current",
-        "d": "To measure voltage drop across the collector-emitter junction"
-      },
-      "correctAnswer": "c",
-      "difficulty": "intermediate"
+    "correctAnswer": "a",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "4. How does the Fermi energy level of a p-type semiconductor shift with increasing temperature?",
+    "answers": {
+      "a": "It moves closer to the conduction band",
+      "b": "It moves closer to the valence band",
+      "c": "It remains constant",
+      "d": "It moves away from the valence band"
     },
-    {
-      "question": "5. What does the ideality factor in a BJT refer to?",
-      "answers": {
-        "a": "A measure of how closely the BJT follows the ideal exponential relationship",
-        "b": "A measure of collector current efficiency",
-        "c": "A measure of base current leakage",
-        "d": "A measure of temperature dependence"
-      },
-      "correctAnswer": "a",
-      "difficulty": "intermediate"
+    "correctAnswer": "d",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "5. Which factor primarily controls the variation of carrier concentration with temperature in a semiconductor?",
+    "answers": {
+      "a": "Band gap energy",
+      "b": "Fermi level position",
+      "c": "Dielectric constant",
+      "d": "Magnetic field strength"
     },
-    {
-      "question": "6. How does the Gummel plot help in analyzing BJT operation in different regions?",
-      "answers": {
-        "a": "By identifying breakdown voltage",
-        "b": "By showing linear and saturation regions clearly",
-        "c": "By measuring thermal resistance",
-        "d": "By calculating power gain"
-      },
-      "correctAnswer": "b",
-      "difficulty": "intermediate"
+    "correctAnswer": "a",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "6. At very high temperatures, how does the carrier concentration in an intrinsic semiconductor behave?",
+    "answers": {
+      "a": "It saturates",
+      "b": "It increases exponentially",
+      "c": "It decreases exponentially",
+      "d": "It remains constant"
     },
-    {
-      "question": "7. What does the slope of the collector current (I_C) versus base-emitter voltage (V_BE) plot determine?",
-      "answers": {
-        "a": "Emitter efficiency",
-        "b": "Saturation current (I_S)",
-        "c": "Current gain (\u03b2)",
-        "d": "Thermal voltage (V_T)"
-      },
-      "correctAnswer": "b",
-      "difficulty": "advanced"
+    "correctAnswer": "b",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "7. What is the relationship between the Fermi energy level and carrier concentration in an n-type semiconductor as temperature increases?",
+    "answers": {
+      "a": "Carrier concentration increases and Fermi level moves closer to conduction band",
+      "b": "Carrier concentration decreases and Fermi level moves closer to conduction band",
+      "c": "Carrier concentration remains constant and Fermi level moves away from conduction band",
+      "d": "Carrier concentration decreases and Fermi level moves closer to valence band"
     },
-    {
-      "question": "8. In a Gummel plot, what does the term 'early effect' refer to?",
-      "answers": {
-        "a": "Voltage dependence of collector current",
-        "b": "Temperature dependence of base current",
-        "c": "Voltage dependence of base current",
-        "d": "Temperature dependence of collector current"
-      },
-      "correctAnswer": "a",
-      "difficulty": "advanced"
+    "correctAnswer": "a",
+    "difficulty": "advanced"
+  },
+  {
+    "question": "8. How does the Fermi energy level in a p-type semiconductor compare to the intrinsic Fermi level at high temperatures?",
+    "answers": {
+      "a": "It is closer to the valence band",
+      "b": "It is closer to the conduction band",
+      "c": "It is at the same position",
+      "d": "It moves away from both bands"
     },
-    {
-      "question": "9. How can the Gummel plot aid in optimizing BJT circuit design?",
-      "answers": {
-        "a": "By minimizing thermal resistance",
-        "b": "By maximizing current gain",
-        "c": "By ensuring proper biasing and performance",
-        "d": "By increasing breakdown voltage"
-      },
-      "correctAnswer": "c",
-      "difficulty": "advanced"
+    "correctAnswer": "a",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "9. What is the effect of temperature on the intrinsic carrier concentration in a semiconductor?",
+    "answers": {
+      "a": "It decreases linearly",
+      "b": "It increases linearly",
+      "c": "It increases exponentially",
+      "d": "It remains unchanged"
     },
-    {
-      "question": "10. What region of operation is characterized by a Gummel plot where collector current (I_C) remains relatively constant with changes in base-emitter voltage (V_BE)?",
-      "answers": {
-        "a": "Cut-off",
-        "b": "Active",
-        "c": "Saturation",
-        "d": "Breakdown"
-      },
-      "correctAnswer": "c",
-      "difficulty": "advanced"
-    }
+    "correctAnswer": "c",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "10. In a degenerate semiconductor, how does increasing temperature influence the carrier concentration?",
+    "answers": {
+      "a": "It remains constant",
+      "b": "It increases significantly",
+      "c": "It decreases",
+      "d": "It decreases initially then increases"
+    },
+    "correctAnswer": "b",
+    "difficulty": "advanced"
+  }
+
   ]
 }
