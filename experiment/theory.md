@@ -1,60 +1,71 @@
 ## Theory
-**Introduction:**  
-The boundary between accumulation and depletion is the flat-band voltage and the boundary between depletion and inversion is the threshold voltage.
+The behavior of charge carriers in semiconductors is heavily influenced by temperature. The Fermi energy level, which represents the chemical potential of electrons, plays a crucial role in determining the carrier concentrations in both the conduction and valence bands. As temperature changes, so do the carrier concentrations, leading to shifts in the Fermi energy level.
 
-![](./images/tvic.jpg)  
-**Fig. 1. Threshold Voltage and Inversion charge**
+Carrier Concentration in Semiconductors
+=======================================
+
+Carrier concentration in semiconductors refers to the density of free charge carriers, which include electrons in the conduction band and holes in the valence band. These carriers are responsible for conducting electric current in the material. The carrier concentration is a fundamental property that determines the electrical behavior of semiconductors and is influenced by factors such as temperature, doping, and the intrinsic properties of the semiconductor material.
+
+Intrinsic Carrier Concentration
+-------------------------------
+
+In an intrinsic semiconductor, which is a pure semiconductor with no intentional doping, the number of electrons in the conduction band is equal to the number of holes in the valence band. The intrinsic carrier concentration (\\( n\_i \\)) can be expressed as:
+
+$$ n\_i = \\sqrt{N\_c \\cdot N\_v} \\cdot \\exp\\left(-\\frac{E\_g}{2k\_B T}\\right) $$
+
+Here, \\( N\_c \\) is the effective density of states in the conduction band, \\( N\_v \\) is the effective density of states in the valence band, \\( E\_g \\) is the energy band gap of the semiconductor, \\( k\_B \\) is the Boltzmann constant, and \\( T \\) is the absolute temperature in Kelvin.
+
+The intrinsic carrier concentration increases with temperature, as thermal energy excites more electrons from the valence band to the conduction band. This relationship is exponential, indicating that even a small increase in temperature can significantly increase the number of free carriers.
+<img src="images/icc.png"  />
+
+**Fig. 1. Semiconductor intrinsic carrier concentration versus temperature**
 
   
 
-### MOS Capacitor's three regimes-Accumulation, Depletion, Inversion
+Extrinsic Carrier Concentration
+-------------------------------
 
-A MOS Capacitor can be in three regimes: accumulation, depletion, and inversion [1,2]. The boundary between accumulation and depletion is the flat-band voltage, and the boundary between depletion and inversion is the threshold voltage. The flat-band voltage, denoted as $$V_{fb}$$ or $$V_{bi}$$, is defined as $$\phi_m - \phi_s$$, where $$\phi_m$$ is the work function of the metal and $$\phi_s$$ is the work function of the semiconductor substrate.
+When a semiconductor is doped with impurities, it becomes extrinsic, meaning its electrical properties are dominated by the added dopants. Doping introduces additional energy levels within the band gap, which can donate or accept electrons, thereby increasing the carrier concentration.
+<img src="images/ecc.jpg"  />
 
-At the flat-band voltage, the bands are flat, resulting in an electric field of zero throughout the semiconductor. The hole concentration $$p$$ equals the acceptor concentration, and the charge density $$\rho$$ is zero.
+**Fig. 2. Effect of temperature on extrinsic semiconductors**
 
-Accumulation occurs when the gate voltage $$V$$ is negative, attracting holes to the oxide interface. This causes the valence band to bend up towards the Fermi energy, increasing the hole concentration $$p$$ near the oxide interface. The Fermi energy in the metal (represented by the black line on the left in the band diagram) moves up for negative voltages, indicating an increase in electron energy.
+  
 
-In the depletion regime, a positive gate voltage pushes mobile holes away from the oxide, leaving negatively charged acceptors behind. The valence band bends away from the Fermi energy at the oxide, resulting in a lower hole concentration near the oxide. The negative charge in the semiconductor is balanced by a positive charge on the metal surface, as indicated by the charge plot arrow. As the gate voltage increases positively, the depletion width grows, and the bands bend further down. Eventually, the conduction band gets closer to the Fermi energy than the valence band, leading to weak inversion where $$n > p$$ near the oxide. Strong inversion occurs when $$n = N_A$$ (acceptor concentration) at the oxide interface, at the threshold voltage $$V_T$$.
+Extrinsic Carrier Concentration
+-------------------------------
+<img src="images/ecc.png"  />
 
-At $$V > V_T$$, an inversion channel forms at the semiconductor/oxide interface, characterized by a layer of mobile electrons. In the inversion state, the electric field in the semiconductor remains constant, while it increases within the oxide layer.
+**Fig. 3. Behaviour of the Fermi Energy**
 
-### Determining the band bending
+  
 
-To calculate the band bending, we start with Gauss's law,
+### n-type Semiconductors
 
-$$\\begin{equation} \\nabla \\cdot \\vec{E} = \\frac{\\rho}{\\epsilon\_s\\epsilon\_0}. \\end{equation}$$
+In n-type semiconductors, the concentration of electrons in the conduction band is approximately equal to the concentration of donor atoms:
 
-$$Combining \ this \ with \ \\vec{E}=-\\nabla V \ yields \ the \ Poisson \ equation,$$
+$$ n \\approx N\_d $$
 
-$$\\begin{equation} \\nabla^2V = -\\frac{\\rho}{\\epsilon\_s\\epsilon\_0}, \\end{equation}$$
+As temperature increases, some donor electrons may become thermally excited to the conduction band, slightly increasing the carrier concentration.
 
-where, for a MOS capacitor with a p-type substrate, the charge density is 
-$$\\rho = e\\left(-N\_A-n+p\\right)$$ and the charge carrier concentrations are,
+### p-type Semiconductors
 
+In p-type semiconductors, acceptor atoms are introduced, which have fewer valence electrons than the atoms they replace. These acceptor atoms create holes in the valence band, which act as positive charge carriers. The concentration of holes (\\( p \\)) is approximately equal to the concentration of acceptor atoms (\\( N\_a \\)) at low temperatures:
 
-$$\\begin{equation} n=N\_c(300)\\left(\\frac{T}{300}\\right)^{3/2}\\exp\\left(\\frac{E\_F-E\_c}{k\_BT}\\right)\\qquad \\text{and}\\qquad p=N\_v(300)\\left(\\frac{T}{300}\\right)^{3/2}\\exp\\left(\\frac{E\_v-E\_F}{k\_BT}\\right). \\end{equation}$$
+$$ p \\approx N\_a $$
 
-Using the relation $$e\\frac{dV}{dx} = -\\frac{E\_v}{dx}$$ the Poisson equation can be written as a second order differential equation for $$E_v(x)$$,
+As temperature increases, the intrinsic carrier concentration also rises, leading to an increase in the number of holes.
 
-$$ \\begin{equation} \\frac{d^2E\_v}{dx^2} = \\frac{e^2}{\\epsilon\_s\\epsilon\_0}\\left(-N\_A-N\_c\\exp\\left(\\frac{-E\_g-E\_v}{k\_BT}\\right)+N\_v\\exp\\left(\\frac{E\_v}{k\_BT}\\right)\\right). \\end{equation}$$
+Fermi Level
+-----------
 
-### Numerical
+The Fermi level is a critical concept in understanding the behavior of charge carriers in semiconductors. It represents the energy level at which the probability of finding an electron is 50%. The position of the Fermi level shifts with temperature and carrier concentration.
 
-This differential equation was solved numerically using the shooting method [3]. First the maximum depletion width $$max(x_p)$$ and the threshold voltage $$V_T$$ are estimated using the analytic formulas from the depletion approximation.
+In intrinsic semiconductors, the Fermi level lies near the center of the band gap. In n-type semiconductors, the Fermi level shifts closer to the conduction band, while in p-type semiconductors, it shifts closer to the valence band. This shift is influenced by temperature and the concentration of charge carriers.
 
+Conclusion
+----------
 
-
-$$\\begin{equation} x\_p = 2\\sqrt{\\frac{\\epsilon\_{\\text{semi}}\\epsilon\_0 k\_BT}{e^2N\_A}\\ln\\left(\\frac{N\_A}{n\_i}\\right)}. \\end{equation}$$ 
-
-$$\\begin{equation} V\_T = \\frac{2t\_{ox}}{\\epsilon\_{ox}}\\sqrt{\\epsilon\_{\\text{semi}}N\_Ak\_BT \\ln \\left (\\frac{N\_A}{n\_i} \\right )} +\\frac{2k\_BT}{e} \\ln \\left (\\frac{N\_A}{n\_i} \\right ) +V\_{fb} \\end{equation}$$
-
-Far from the oxide, the valence band satisfies the conditions $$E_v=k_BTln(N_AN_v)=E_{v0}E_v=k_BTln⁡(\frac{N_A}{N_v})=E_{v0}$$ and $$dE_vdx=0\frac{dE_v}{dx}=0$$. To determine the band bending, we start a distance of $$1.8x_p$$ from the oxide with $$E\_{v} = k\_BT\\ln\\left(\\frac{N\_A}{N\_v}\\right)=E\_{v0}$$ and a small value of $$dE_vdx=0\frac{dE_v}{dx}=0$$. The Poisson equation is integrated numerically using the midpoint method until the semiconductor oxide interface. This gives us the voltage $$V_s$$ at the semiconductor/oxide interface and the electric field $$E_s$$ at that point. The voltage on the gate is,
-
-
-$$\\begin{equation} V = \\frac{\\epsilon\_{\\text{semi}}E\_s}{\\epsilon\_{\\text{ox}}}t\_{\\text{ox}}+V\_s. \\end{equation}$$
-
-This is the correct gate voltage for the boundary conditions we chose on the right, but generally, it may not be the desired gate voltage. The starting position of integration is then adjusted either to the right or left, and the integration process is repeated until the calculated voltage, obtained through numerical integration, matches $$V_{shoot}$$. The simulation produces incorrect results if the valence band or conduction band approach within approximately $$3k_BT$$ from the Fermi energy. This limitation arises because the formulas for nnn and ppp are valid only when the valence and conduction bands are sufficiently far from the Fermi energy.
-
+In conclusion, the variation of the Fermi energy level and carrier concentration with temperature is crucial for understanding the electrical properties of semiconductors. The intrinsic and extrinsic carrier concentrations change significantly with temperature, affecting the position of the Fermi level and the overall behavior of the semiconductor.
  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>    
  
