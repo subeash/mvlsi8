@@ -1,15 +1,50 @@
 ## Procedure
 
-<img src="images/peq.jpg"  />
+*   Gather the required equipment:
+    *   Semiconductor sample (e.g., silicon or germanium)
+    *   Temperature-controlled chamber (e.g., cryostat or furnace)
+    *   Four-point probe setup
+    *   Digital multimeter
+    *   Data acquisition system
+    *   Graphing software
+    *   Protective equipment (gloves, safety glasses)
+<img src="images/FRB.png"  />
+ 
   
-**Fig. 1. Gradual channel approximation**
+**Fig. 1. The calculated defect formation energy of Mg substitution for Ga as a function of Fermi energy**
 
   
 
-**Steps to perform the real measurement in HP 4145B Semiconductor Parameter Analyzer**  
+*   Set up the circuit for forward bias:
+    *   Connect the anode of the diode to the positive terminal of the power supply.
+    *   Connect the cathode of the diode to one terminal of the ammeter.
+    *   Connect the other terminal of the ammeter to the negative terminal of the power supply.
+    *   Connect the voltmeter across the diode to measure the voltage drop.
 
-In this simulation, the bulk of the semiconductor is grounded and V is the voltage on the metal gate, $$t_{ox}$$ is the thickness of the oxide, $$E_g$$ is the band gap which can be temperature dependent, $$ϵ_{ox}$$ is the relative dielectric constant of the oxide, $$ϵ_s$$ is the relative dielectric constant of the semiconductor, $$E_s$$ is the electric field at the semiconductor-oxide interface, Q is the charge on the charge on the semiconductor, $$ϕ_m$$ is the work function of the metal, $$χ_s$$ is the electron affinity of the semiconductor, $$V_s$$ is the voltage at the semiconductor-oxide interface, T is the absolute temperature, $$N_A$$ is the concentration of acceptors, $$N_c(300)$$ is the effective density of states in the conduction band at 300 K, and $$N_v(300)$$ is the effective density of states in the valence band at 300 K. Note that in the band diagram, the band gap of the oxide is drawn 2 eV larger than the band gap of the semiconductor. In reality, the band gap of the oxide would be much larger but it is easier to see the band bending when the diagram is plotted with a small band gap for the gate oxide.
+Procedure
+---------
+<img src="images/FRB2.png"  />
 
-The - and + buttons change the gate voltage by ±0.01±0.01\\pm 0.01 V.
+  
+**Fig. 2. Transport properties and doping evolution of the Fermi surface in cuprates**
 
-When the metal and the semicondutor are electrically connected, electrons flow from the material with a low work function to the material with a high work function. This current flow stops when a built-in voltage is established that is equal to the work function difference, $$Vbi\=ϕm−ϕsVbi\=ϕm−ϕsV\_{bi}=\\phi\_m-\\phi\_s$$. The work function of a semiconductor depends on the electron affinity χsχs\\chi\_s and the doping, $$ϕs\=χs+Ec−EFϕs\=χs+Ec−EF\\phi\_s=\\chi\_s+E\_c-E\_F$$.
+  
+
+1.  **Preparation:**
+    *   Ensure the semiconductor sample is clean and properly mounted in the four-point probe setup.
+    *   Verify that the temperature-controlled chamber is functioning correctly.
+2.  **Initial Measurements:**
+    *   Record the initial temperature of the semiconductor sample.
+    *   Measure and record the resistance of the semiconductor sample at this temperature.
+3.  **Temperature Variation:**
+    *   Gradually increase the temperature of the semiconductor sample in predefined steps (e.g., 10°C intervals).
+    *   Allow the sample to stabilize at each temperature before taking measurements.
+    *   At each temperature, measure the resistance of the sample using the digital multimeter.
+4.  **Data Collection:**
+    *   Record the temperature and corresponding resistance values in a data table.
+5.  **Analysis:**
+    *   Plot the resistance versus temperature data to determine the relationship between temperature and carrier concentration.
+    *   Analyze how the Fermi energy level shifts with temperature based on the observed changes in resistance.
+6.  **Conclusion:**
+    *   Summarize the findings regarding the variation of the Fermi energy level and carrier concentration with temperature.
+    *   Discuss any deviations from theoretical expectations and potential sources of error.
